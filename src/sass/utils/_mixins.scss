@@ -1,7 +1,7 @@
 @mixin mq($range) {
   $mobile: 480px;
   $tablet: 768px;
-  $desctop: 1366px;
+  $desktop: 1680px;
 
   @if $range == mobile-only {
     @media (max-width: #{$tablet - 0.02}) {
@@ -12,7 +12,7 @@
       @content;
     }
   } @else if $range == tablet-only {
-    @media (min-width: $tablet ) and (max-width:#{$desctop - 0.02}) {
+    @media (min-width: $tablet ) and (max-width:#{$desktop - 0.02}) {
       @content;
     }
   } @else if $range == tablet {
@@ -20,11 +20,11 @@
       @content;
     }
   } @else if $range == no-desctop {
-    @media (max-width: #{$desctop - 0.02}) {
+    @media (max-width: #{$desktop - 0.02}) {
       @content;
     }
   } @else if $range == desctop {
-    @media (min-width: $desctop) {
+    @media (min-width: $desktop) {
       @content;
     }
   } @else if $range == retina {
