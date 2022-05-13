@@ -61,3 +61,42 @@
         margin-bottom: 60px;
     }
 }
+
+.contacts__input {
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    padding-right: 28px;
+    padding-left: 28px;
+    max-width: 280px;
+    height: 48px;
+    outline: none;
+    border: 1px solid #ffffff;
+    background-color: transparent;
+    color: #ffffff;
+
+    &::placeholder {
+        color: #ffffff;
+        font-weight: 600;
+        font-size: 14px;
+    }
+
+    &:last-of-type {
+        margin-bottom: 40px;
+    }
+}
+
+.contacts__btn {
+    display: block;
+    margin: 0 auto;
+    text-transform: uppercase;
+    width: 280px;
+    height: 48px;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 1.25;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.08em;
+    color: #ffffff;
+}
