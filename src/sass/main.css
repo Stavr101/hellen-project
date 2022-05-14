@@ -153,6 +153,11 @@ address {
   margin-top: 30px;
 }
 
+.how_we_do {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
 .how_we_do-wrapper {
   display: block;
   padding-top: 32px;
@@ -162,18 +167,26 @@ address {
   min-height: 280px;
   -webkit-box-shadow: 0px 8px 26px rgba(0, 0, 0, 0.1);
           box-shadow: 0px 8px 26px rgba(0, 0, 0, 0.1);
-  -webkit-transition: background-color 500ms linear;
-  transition: background-color 500ms linear;
   cursor: pointer;
   margin-left: auto;
   margin-right: auto;
 }
 
-.how_we_do-wrapper:hover, .how_we_do-wrapper:focus {
+.how_we_do-link {
+  display: block;
+  height: 100%;
+  color: inherit;
+  -webkit-transition: background-color 500ms linear;
+  transition: background-color 500ms linear;
+}
+
+.how_we_do-link:hover,
+.how_we_do-link:focus {
   background-color: var(--accent-color);
 }
 
 .how_we_do-title {
+  margin-bottom: 32px;
   font-size: 20px;
   text-align: center;
   font-weight: 800;
@@ -189,13 +202,13 @@ address {
   line-height: 1.43;
   text-align: center;
   margin-bottom: 20px;
+  -webkit-transition: color 250ms linear;
+  transition: color 250ms linear;
 }
 
-.how_we_do-wrapper:hover .how_we_do-subtitle,
-.how_we_do-wrapper:focus .how_we_do-subtitle {
+.how_we_do-link:hover .how_we_do-subtitle,
+.how_we_do-link:focus .how_we_do-subtitle {
   color: #ffffff;
-  -webkit-transition: color 500ms linear;
-  transition: color 500ms linear;
 }
 
 .how_we_do-subtitle::after {
@@ -217,8 +230,8 @@ address {
   margin-bottom: 20px;
 }
 
-.how_we_do-wrapper:hover .how_we_do-icon,
-.how_we_do-wrapper:focus .how_we_do-icon {
+.how_we_do-link:hover .how_we_do-icon,
+.how_we_do-link:focus .how_we_do-icon {
   fill: #ffffff;
   -webkit-transition: fill 500ms linear;
   transition: fill 500ms linear;
@@ -235,8 +248,8 @@ address {
   line-height: 1.67;
 }
 
-.how_we_do-wrapper:hover .how_we_do-description,
-.how_we_do-wrapper:focus .how_we_do-description {
+.how_we_do-link:hover .how_we_do-description,
+.how_we_do-link:focus .how_we_do-description {
   color: #ffffff;
   -webkit-transition: color 500ms linear;
   transition: color 500ms linear;
@@ -263,17 +276,23 @@ address {
 }
 
 @media screen and (min-width: 1680px) {
+  .how_we_do {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
   .how_we_do-icon {
     margin-bottom: 32px;
   }
   .how_we_do-title {
+    margin-bottom: 80px;
     font-size: 46px;
     text-align: start;
   }
   .how_we_do-wrapper {
     padding-top: 90px;
-    padding-left: 82px;
-    padding-right: 82px;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-bottom: 40px;
     max-width: 520px;
     min-height: 492px;
   }

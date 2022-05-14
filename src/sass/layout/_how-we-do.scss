@@ -1,3 +1,7 @@
+.how_we_do {
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
 .how_we_do-wrapper {
     display: block;
     padding-top: 32px;
@@ -7,22 +11,32 @@
     min-height: 280px;
     box-shadow: 0px 8px 26px rgba(0, 0, 0, 0.1);
 
-    transition: background-color 500ms linear;
+    
     cursor: pointer;
 
     margin-left: auto;
     margin-right: auto;
     
-    &:hover,
-    &:focus {
-        background-color: var(--accent-color);
-    }
+}
+
+.how_we_do-link {
+    display: block;
+    // width: 100%;
+    height: 100%;
+    color: inherit;
+    transition: background-color 500ms linear;
+}
+
+.how_we_do-link:hover,
+.how_we_do-link:focus {
+    background-color: var(--accent-color);
 }
 
 .how_we_do-title {
+    margin-bottom: 32px;
+
     font-size: 20px;
     text-align: center;
-
     font-weight: 800;
     line-height: 1.3;
     letter-spacing: 0.03em;
@@ -36,12 +50,13 @@
     line-height: 1.43;
     text-align: center;
     margin-bottom: 20px;
+    transition: color 250ms linear;
 
-    .how_we_do-wrapper:hover &,
-    .how_we_do-wrapper:focus & {
+    .how_we_do-link:hover &,
+    .how_we_do-link:focus & {
         color: #ffffff;
 
-        transition: color 500ms linear;
+        
     }
 
     &::after {
@@ -63,8 +78,8 @@
     margin-right: auto;
     margin-bottom: 20px;
     
-    .how_we_do-wrapper:hover &,
-    .how_we_do-wrapper:focus & {
+    .how_we_do-link:hover &,
+    .how_we_do-link:focus & {
         fill: #ffffff;
 
         transition: fill 500ms linear;
@@ -82,8 +97,8 @@
     line-height: 1.67;
 }
 
-.how_we_do-wrapper:hover .how_we_do-description,
-.how_we_do-wrapper:focus .how_we_do-description {
+.how_we_do-link:hover .how_we_do-description,
+.how_we_do-link:focus .how_we_do-description {
     color: #ffffff;
 
     transition: color 500ms linear;
@@ -114,11 +129,17 @@
 }
 
 @media screen and (min-width: 1680px) {
+    .how_we_do {
+        padding-top: 80px;
+        padding-bottom: 80px;
+    }
+
     .how_we_do-icon {
         margin-bottom: 32px;
     }
 
     .how_we_do-title {
+       margin-bottom: 80px;
        font-size: 46px; 
        text-align: start;
     }
@@ -126,8 +147,9 @@
 
     .how_we_do-wrapper {
         padding-top: 90px;
-        padding-left: 82px;
-        padding-right: 82px;
+        padding-left: 40px;
+        padding-right: 40px;
+        padding-bottom: 40px;
         max-width: 520px;
         min-height: 492px;
     }
