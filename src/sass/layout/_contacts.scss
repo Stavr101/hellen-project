@@ -5,14 +5,16 @@
     margin: 0;
     padding-top: 40px;
     padding-bottom: 40px;
+    background-color: rgba(17, 21, 24, 0.7);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: linear-gradient(to right, rgba(17, 21, 24, 0.8), rgba(17, 21, 24, 0.8)), url(../images/contacts/contacts-desktop-1x.jpg);
 
     @media screen and (min-width: 1200px) {
         padding-top: 80px;
         padding-bottom: 80px;
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
-        background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/demo.jpg);
+
     }
 }
 
