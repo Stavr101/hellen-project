@@ -1,5 +1,5 @@
 <section class="contacts">
-    <div class="container">
+    <div class="container contacts__container">
         <h2 class="contacts__title">
             Registartion for a <span class="contacts__accent">free</span>
             phone <span class="contacts__accent">consultation</span>
@@ -13,9 +13,16 @@
             A consultant will contact you and answer your questions</p>
         <form class="contacts__form">
             <input class="contacts__input"
-                type="text" placeholder="Name*">
+                type="text"
+                placeholder="Name*"
+                pattern="[А-Яа-я]*?\s[А-Яа-я]*?\s[А-Яа-я]*">
             <input class="contacts__input"
-                type="tel" placeholder="Phone*">
+                type="tel" placeholder="Phone*"
+                name="phone"
+                pattern="[\+]\d{3}\s[\(]\d{2}[\)]\s\d{3}[\-]\d{2}[\-]\d{2}"
+                minlength="13"
+                maxlength="13"
+                />
             <button class="contacts__btn" type="submit">
                 i want a free lesson
             </button>
