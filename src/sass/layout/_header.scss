@@ -1,17 +1,20 @@
-.container {
-  padding: 15px;
+.header {
+  background-color: #ffffff;
+  border: none;
+  outline: none;
 }
 .header__container {
-  position: absolute;
+  position: relative;
   display: flex;
   z-index: 1000;
   justify-content: space-between;
   align-items: center;
   padding-top: 40px;
-  margin-left: auto;
+  padding-bottom: 40px;
   margin-right: auto;
   color: #ffffff;
-  @include mq(mobile-only) {
+  background-color: #ffffff;
+  @include mq(mobile) {
     width: 480px;
   }
   @include mq(tablet-only) {
@@ -120,6 +123,7 @@
 
 .mobile-menu {
   position: absolute;
+  z-index: 1000;
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
@@ -147,7 +151,12 @@
   flex-direction: column;
   margin-left: auto;
   margin-right: auto;
-  padding: 20px;
+  @include mq(mobile) {
+    width: 480px;
+  }
+  @include mq(tablet-only) {
+    width: 768px;
+  }
 }
 .mobile-menu__close-btn {
   position: absolute;
@@ -167,12 +176,12 @@
 }
 
 .mobile__logo {
-  margin-top: 20px;
+  margin-top: 40px;
   margin-bottom: 40px;
   margin-right: auto;
 }
 .navigation-list-mobile {
-  @include mq(tablet-only) {
+  @include mq(nodesktop) {
     margin-left: auto;
     margin-right: auto;
     margin-top: 60px;
