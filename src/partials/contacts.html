@@ -16,14 +16,15 @@
                 type="text"
                 placeholder="Name*"
 
-                pattern="[A-Za-z]"
-                title="Please enter your name with latin letters">
+                pattern="[A-Za-z]{2,}"
+                title="Please enter your name with latin letters (min 2
+                symbols)">
             <input class="contacts__input"
                 type="tel" placeholder="Phone*"
                 name="phone"
-                minlength="13"
-                maxlength="13"
-                title="+380667777777"
+                minlength="10"
+                maxlength="17"
+                title="+380677777777"
                 />
             <button class="modal__btn contacts__btn" type="submit">
                 i want a free lesson
