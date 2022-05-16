@@ -1,0 +1,193 @@
+.reviews {
+    padding-top: 40px;
+    padding-bottom: 40px;
+
+    @media screen and (mix-width: 1680px) {
+        padding-top: 80px;
+        padding-bottom: 80px;
+    }
+}
+
+.section-title {
+    margin-bottom: 24px;
+    font-weight: 800;
+    font-size: 20px;
+    line-height: 1.3;
+    text-align: center;
+    letter-spacing: 0.03em;
+
+    color: #111518;
+
+    @media screen and (min-width: 768px) {
+        margin-bottom: 40px;
+        font-size: 26px;
+    }
+
+    @media screen and (min-width: 1680px) {
+        font-size: 46px;
+    }
+}
+
+.reviews__article {
+    margin-bottom: 40px;
+
+    @media screen and (min-width: 768px) {
+        display: flex;
+        padding-left: 50px;
+        padding-right: 80px;
+        padding-top: 40px;
+        padding-bottom: 40px;
+        background: #FFFFFF;
+        box-shadow: -5px 8px 26px rgba(0, 0, 0, 0.04);
+    }
+
+    @media screen and (min-width: 1680px) {
+        padding-left: 80px;
+        padding-right: 110px;
+    }
+}
+
+.reviews__img-box {
+    @media screen and (min-width: 768px) {
+        margin-right: 42px;
+    }
+
+}
+
+.reviews__subtitle {
+    margin-bottom: 16px;
+    font-weight: 800;
+    font-size: 14px;
+    line-height: 1.21;
+    letter-spacing: 0.08em;
+    text-align: center;
+
+    color: #FF6B09;
+
+    @media screen and (min-width: 768px) {
+        margin-bottom: 20px;
+        text-align: left;
+        font-size: 20px;
+    }
+
+    @media screen and (min-width: 1680px) {
+        margin-bottom: 8px;
+        font-size: 14px;
+    }
+}
+
+.reviews__descr {
+    margin-bottom: 16px;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.25;
+    letter-spacing: 0.08em;
+
+    color: #B9B9B9;
+
+    @media screen and (min-width: 768px) {
+        margin-bottom: 20px;
+        font-size: 12px;
+        text-align: left;
+    }
+
+    @media screen and (min-width: 1680px) {
+        font-size: 14px;
+    }
+}
+
+.reviews__text {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.67;
+    color: #3D3D3D;
+
+    @media screen and (min-width: 1680px) {
+        font-size: 18px;
+        text-align: left;
+    }
+
+}
+
+.read-more {
+    color: #FF6B09;
+    cursor: pointer;
+
+}
+
+// CHANGE COLOR TO ACCENT COLOR
+// CHANGE SECTION-TITLE CLASS, use mixins
+
+.reviews__main-img {
+
+    display: block;
+    margin: 0 auto;
+    // margin-bottom: 24px;
+
+
+
+
+}
+
+.reviews__vk {
+    margin-bottom: 24px;
+    text-align: center;
+}
+
+.reviews__icon {
+    fill: #436EAB;
+}
+
+.reviews__list {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    @media screen and (min-width: 768px) {}
+
+    @media screen and (min-width: 1680px) {}
+}
+
+.reviews__member {
+    @media screen and (min-width: 768px) {
+        &+& {
+            margin-left: 32px;
+        }
+    }
+
+    @media screen and (min-width: 1680px) {
+        &+& {
+            margin-left: 40px;
+        }
+    }
+}
+
+.mySwiper {
+    @media screen and (min-width: 768px) {
+        display: none;
+    }
+}
+
+.hide-on-mobile {
+    @media screen and (max-width: 767px) {
+        display: none;
+    }
+
+}
+
+.swiper-button-next {
+    // width: 30px;
+    // height: 2px;
+    color: #FF6B09;
+    // background-color: #FF6B09;
+}
+
+.swiper-button-prev {
+    color: #FF6B09;
+
+}
+
+.reviews__btn-next {
+    fill: #FF6B09;
+}
