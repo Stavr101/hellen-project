@@ -169,19 +169,19 @@
 .contacts__btn {
     display: block;
     margin: 0 auto;
-    // text-transform: uppercase;
+    text-transform: uppercase;
     width: 280px;
     height: 48px;
-    // font-weight: 700;
-    // font-size: 12px;
-    // line-height: 1.25;
-    // align-items: center;
-    // text-align: center;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 1.25;
+    align-items: center;
+    text-align: center;
     letter-spacing: 0.08em;
-    // color: #ffffff;
-    // background-color: var(--accent-color);
-    // border: none;
-    // transition: background-color var(--transition);
+    color: #ffffff;
+    background-color: var(--accent-color);
+    border: none;
+    transition: background-color var(--transition);
 
     &:hover,
     &:focus {
