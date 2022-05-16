@@ -126,8 +126,8 @@
     @media screen and (min-width: 1680px) {
         font-size: 30px;
         line-height: 1.2;
+        margin: 0 auto;
         margin-bottom: 60px;
-
         width: 1090px;
     }
 }
@@ -169,16 +169,31 @@
 .contacts__btn {
     display: block;
     margin: 0 auto;
-    text-transform: uppercase;
+    // text-transform: uppercase;
     width: 280px;
     height: 48px;
-    font-weight: 700;
-    font-size: 12px;
-    line-height: 1.25;
-    align-items: center;
-    text-align: center;
+    // font-weight: 700;
+    // font-size: 12px;
+    // line-height: 1.25;
+    // align-items: center;
+    // text-align: center;
     letter-spacing: 0.08em;
-    color: #ffffff;
-    background-color: var(--accent-color);
-    border: none;
+    // color: #ffffff;
+    // background-color: var(--accent-color);
+    // border: none;
+    // transition: background-color var(--transition);
+
+    &:hover,
+    &:focus {
+        background-color: #d36d0e;
+    }
+
+    @include mq(tablet) {
+        width: 335px;
+    }
+
+    @include mq(desktop) {
+        width: 528px;
+        font-size: 14px;
+    }
 }
