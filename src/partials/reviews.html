@@ -1,3 +1,4 @@
+
 <section class="reviews">
     <div class="container">
         <h2 class="section-title">
@@ -5,7 +6,23 @@
         </h2>
 
         <article class="reviews__article">
-
+            <div class="hide-on-mobile">
+                <svg
+                    class="reviews__btn-next arrow-prev"
+                    width="25" height="25">
+                    <use
+                        href="./images/reviews/reviews-icons.svg#icon-arrow1">
+                    </use>
+                </svg>
+                <svg
+                    class="reviews__btn-next
+                    arrow-next"
+                    width="25" height="25">
+                    <use
+                        href="./images/reviews/reviews-icons.svg#icon-arrow2">
+                    </use>
+                </svg>
+            </div>
             <div class="reviews__img-box">
                 <picture>
                     <source
@@ -73,9 +90,27 @@
             </div>
         </article>
 
-        <div class="swiper mySwiper">
-            <ul class="reviews__list swiper-wrapper">
-                <li class="reviews__member swiper-slide"> <a href="">
+
+        <div class="reviews__mobile-only">
+            <div class="reviews__mobile">
+                <svg
+                    class="reviews__btn-next arrow-prev"
+                    width="25" height="25">
+                    <use
+                        href="./images/reviews/reviews-icons.svg#icon-arrow1">
+                    </use>
+                </svg>
+                <svg
+                    class="reviews__btn-next
+                    arrow-next"
+                    width="25" height="25">
+                    <use
+                        href="./images/reviews/reviews-icons.svg#icon-arrow2">
+                    </use>
+                </svg>
+            </div>
+            <ul class="reviews__list">
+                <li class="reviews__member"> <a href="">
                         <picture>
                             <source
                                 srcset="./images/reviews/reviews-1photo-1x.jpg
@@ -91,13 +126,13 @@
                                 2x"
                                 media="(max-width: 767px)"
                                 />
-                            <img class="reviews__main-img"
+                            <img
                                 src="./images/reviews/reviews-1photo-1x.jpg"
                                 alt="photo of a reviewer"
                                 width="54">
                         </picture>
                     </a></li>
-                <li class="reviews__member swiper-slide"> <a href="">
+                <li class="reviews__member"> <a href="">
                         <picture>
                             <source
                                 srcset="./images/reviews/reviews-2photo-1x.jpg
@@ -113,13 +148,13 @@
                                 2x"
                                 media="(max-width: 767px)"
                                 />
-                            <img class="reviews__main-img"
+                            <img
                                 src="./images/reviews/reviews-2photo-1x.jpg"
                                 alt="photo of a reviewer"
                                 width="54">
                         </picture>
                     </a></li>
-                <li class="reviews__member swiper-slide"> <a href="">
+                <li class="reviews__member"> <a href="">
                         <picture>
                             <source
                                 srcset="./images/reviews/reviews-3photo-1x.jpg
@@ -135,122 +170,15 @@
                                 2x"
                                 media="(max-width: 767px)"
                                 />
-                            <img class="reviews__main-img"
+                            <img
                                 src="./images/reviews/reviews-3photo-1x.jpg"
                                 alt="photo of a reviewer"
                                 width="54">
                         </picture>
                     </a></li>
-                <li class="reviews__member swiper-slide"> <a href="">
-                        <picture>
-                            <source
-                                srcset="./images/reviews/reviews-4photo-1x.jpg
-                                1x,
-                                ./images/reviews/reviews-4photo-2x.jpg
-                                2x"
-                                media="(min-width: 768px)"
-                                />
-                            <source
-                                srcset="./images/reviews/reviews-4photo-1x.jpg
-                                1x,
-                                ./images/reviews/reviews-4photo-2x.jpg
-                                2x"
-                                media="(max-width: 767px)"
-                                />
-                            <img class="reviews__main-img"
-                                src="./images/reviews/reviews-4photo-1x.jpg"
-                                alt="photo of a reviewer"
-                                width="54">
-                        </picture>
-                    </a></li>
-                <li class="reviews__member swiper-slide"> <a href="">
-                        <picture>
-                            <source
-                                srcset="./images/reviews/reviews-5photo-1x.jpg
-                                1x,
-                                ./images/reviews/reviews-5photo-2x.jpg
-                                2x"
-                                media="(min-width: 768px)"
-                                />
-                            <source
-                                srcset="./images/reviews/reviews-5photo-1x.jpg
-                                1x,
-                                ./images/reviews/reviews-5photo-2x.jpg
-                                2x"
-                                media="(max-width: 767px)"
-                                />
-                            <img class="reviews__main-img"
-                                src="./images/reviews/reviews-5photo-1x.jpg"
-                                alt="photo of a reviewer"
-                                width="54">
-                        </picture>
-                    </a></li>
-                <li class="reviews__member swiper-slide"> <a href="">
-                        <picture>
-                            <source
-                                srcset="./images/reviews/reviews-6photo-1x.jpg
-                                1x,
-                                ./images/reviews/reviews-6photo-2x.jpg
-                                2x"
-                                media="(min-width: 768px)"
-                                />
-                            <source
-                                srcset="./images/reviews/reviews-6photo-1x.jpg
-                                1x,
-                                ./images/reviews/reviews-6photo-2x.jpg
-                                2x"
-                                media="(max-width: 767px)"
-                                />
-                            <img class="reviews__main-img"
-                                src="./images/reviews/reviews-6photo-1x.jpg"
-                                alt="photo of a reviewer"
-                                width="54">
-                        </picture>
-                    </a></li>
-                <li class="reviews__member swiper-slide"> <a href="">
-                        <picture>
-                            <source
-                                srcset="./images/reviews/reviews-7photo-1x.jpg
-                                1x,
-                                ./images/reviews/reviews-7photo-2x.jpg
-                                2x"
-                                media="(min-width: 768px)"
-                                />
-                            <source
-                                srcset="./images/reviews/reviews-7photo-1x.jpg
-                                1x,
-                                swiper-buttuse
-                                ./images/reviews/reviews-7photo-2x.jpg
-                                2x"
-                                media="(max-width: 767px)"
-                                />
-                            <img class="reviews__main-img"
-                                src="./images/reviews/reviews-7photo-1x.jpg"
-                                alt="photo of a reviewer"
-                                width="54">
-                        </picture>
-                    </a></li>
             </ul>
-            <div class="swiper-button-next">
-
-            </div>
-            <svg
-                class="reviews__btn-next"
-                width="25" height="25">
-                <use
-                    href="./images/reviews/reviews-icons.svg#icon-arrow1">
-                </use>
-            </svg>
-            <div class="swiper-button-prev">
-            </div>
-            <svg
-                class="reviews__btn-next"
-                width="25" height="25">
-                <use
-                    href="./images/reviews/reviews-icons.svg#icon-arrow2">
-                </use>
-            </svg>
         </div>
+
         <div class="hide-on-mobile">
             <ul class="reviews__list">
                 <li class="reviews__member"> <a href="">
@@ -269,7 +197,7 @@
                                 2x"
                                 media="(max-width: 767px)"
                                 />
-                            <img class="reviews__main-img"
+                            <img
                                 src="./images/reviews/reviews-1photo-1x.jpg"
                                 alt="photo of a reviewer"
                                 width="54">
@@ -291,7 +219,7 @@
                                 2x"
                                 media="(max-width: 767px)"
                                 />
-                            <img class="reviews__main-img"
+                            <img
                                 src="./images/reviews/reviews-2photo-1x.jpg"
                                 alt="photo of a reviewer"
                                 width="54">
@@ -313,7 +241,7 @@
                                 2x"
                                 media="(max-width: 767px)"
                                 />
-                            <img class="reviews__main-img"
+                            <img
                                 src="./images/reviews/reviews-3photo-1x.jpg"
                                 alt="photo of a reviewer"
                                 width="54">
@@ -335,7 +263,7 @@
                                 2x"
                                 media="(max-width: 767px)"
                                 />
-                            <img class="reviews__main-img"
+                            <img
                                 src="./images/reviews/reviews-4photo-1x.jpg"
                                 alt="photo of a reviewer"
                                 width="54">
@@ -357,7 +285,7 @@
                                 2x"
                                 media="(max-width: 767px)"
                                 />
-                            <img class="reviews__main-img"
+                            <img
                                 src="./images/reviews/reviews-5photo-1x.jpg"
                                 alt="photo of a reviewer"
                                 width="54">
@@ -379,7 +307,7 @@
                                 2x"
                                 media="(max-width: 767px)"
                                 />
-                            <img class="reviews__main-img"
+                            <img
                                 src="./images/reviews/reviews-6photo-1x.jpg"
                                 alt="photo of a reviewer"
                                 width="54">
@@ -401,7 +329,7 @@
                                 2x"
                                 media="(max-width: 767px)"
                                 />
-                            <img class="reviews__main-img"
+                            <img
                                 src="./images/reviews/reviews-7photo-1x.jpg"
                                 alt="photo of a reviewer"
                                 width="54">
@@ -411,29 +339,3 @@
         </div>
     </div>
 </section>
-
-
-<!-- Swiper JS -->
-<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-<!-- Initialize Swiper -->
-<script>
-//         var swiper = new Swiper(".mySwiper", {
-//     slidesPerView: 3,
-//     spaceBetween: 5,
-//     centeredSlides: true,
-//     pagination: {
-//       el: ".swiper-pagination",
-//       clickable: true,
-//     },
-//   });
-var swiper = new Swiper(".mySwiper", {
-slidesPerView: 3,
-spaceBetween: 30,
-centeredSlides: true,
-navigation: {
-  nextEl: ".swiper-button-next",
-  prevEl: ".swiper-button-prev",
-},
-// loop: true,
-});
-</script>

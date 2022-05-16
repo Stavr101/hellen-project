@@ -29,10 +29,14 @@
 }
 
 .reviews__article {
+    position: relative;
     margin-bottom: 40px;
 
     @media screen and (min-width: 768px) {
+        margin: 0 auto;
+        margin-bottom: 20px;
         display: flex;
+        width: 704px;
         padding-left: 50px;
         padding-right: 80px;
         padding-top: 40px;
@@ -42,6 +46,8 @@
     }
 
     @media screen and (min-width: 1680px) {
+        width: 1088px;
+        margin-bottom: 40px;
         padding-left: 80px;
         padding-right: 110px;
     }
@@ -122,10 +128,11 @@
 
     display: block;
     margin: 0 auto;
-    // margin-bottom: 24px;
+    margin-bottom: 20px;
 
-
-
+    @media screen and (max-width: 767px) {
+        margin-bottom: 24px;
+    }
 
 }
 
@@ -143,13 +150,17 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-bottom: 20px;
 
-    @media screen and (min-width: 768px) {}
-
-    @media screen and (min-width: 1680px) {}
 }
 
 .reviews__member {
+    @media screen and (max-width: 767px) {
+        &+& {
+            margin-left: 12px;
+        }
+    }
+
     @media screen and (min-width: 768px) {
         &+& {
             margin-left: 32px;
@@ -163,31 +174,71 @@
     }
 }
 
-.mySwiper {
+
+.reviews__mobile {
+
+
     @media screen and (min-width: 768px) {
         display: none;
     }
 }
 
 .hide-on-mobile {
+
     @media screen and (max-width: 767px) {
         display: none;
     }
 
 }
 
-.swiper-button-next {
-    // width: 30px;
-    // height: 2px;
-    color: #FF6B09;
-    // background-color: #FF6B09;
+.arrow-prev {
+    position: absolute;
+
+    @media screen and (max-width: 767px) {
+        top: 20px;
+        left: 0;
+    }
+
+    @media screen and (min-width: 768px) {
+        top: 160px;
+        left: 5px;
+    }
+
+    @media screen and (min-width: 1680px) {
+        top: 160px;
+        left: -40px;
+    }
+
 }
 
-.swiper-button-prev {
-    color: #FF6B09;
+.arrow-next {
+    position: absolute;
 
+    @media screen and (max-width: 767px) {
+        top: 20px;
+        right: 0;
+    }
+
+    @media screen and (min-width: 768px) {
+        top: 160px;
+        right: 5px;
+    }
+
+    @media screen and (min-width: 1680px) {
+        top: 160px;
+        right: -40px;
+    }
 }
+
 
 .reviews__btn-next {
     fill: #FF6B09;
+}
+
+.reviews__mobile-only {
+    position: relative;
+
+    @media screen and (min-width: 767px) {
+        display: none;
+    }
 }
