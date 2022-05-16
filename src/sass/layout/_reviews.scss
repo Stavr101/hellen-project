@@ -8,12 +8,10 @@
     }
 }
 
-.section-title {
+.reviews__title {
     margin-bottom: 24px;
-    font-weight: 800;
     font-size: 20px;
     line-height: 1.3;
-    text-align: center;
     letter-spacing: 0.03em;
 
     color: #111518;
@@ -116,7 +114,7 @@
 }
 
 .read-more {
-    color: #FF6B09;
+    color: var(--accent-color);
     cursor: pointer;
 
 }
@@ -232,7 +230,7 @@
 
 
 .reviews__btn-next {
-    fill: #FF6B09;
+    fill: var(--accent-color);
 }
 
 .reviews__mobile-only {
