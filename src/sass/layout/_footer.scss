@@ -4,35 +4,24 @@
 .footer__container {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-between;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 40px;
+  padding-top: 40px;
   @include mq(mobile) {
     width: 480px;
   }
   @include mq(tablet-only) {
     width: 768px;
+    flex-direction: row;
   }
   @include mq(desktop) {
     width: 1680px;
-  }
-}
-.position {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  @include mq(mobile-only) {
-    flex-direction: column;
-  }
-  @include mq(tablet) {
     flex-direction: row;
-    margin-top: 40px;
-    margin-bottom: 40px;
-  }
-  @include mq(desktop) {
   }
 }
+
 .footer__logo {
   @include mq(mobile-only) {
     margin-top: 40px;
@@ -41,18 +30,35 @@
     margin-bottom: 20px;
   }
   @include mq(tablet) {
-    margin-right: auto;
   }
   @include mq(desktop) {
   }
 }
-
+.footer-contacts {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  @include mq(tablet) {
+    flex-direction: row;
+    align-items: center;
+    width: 448px;
+  }
+  @include mq(desktop) {
+    align-items: center;
+    margin-right: 596px;
+  }
+}
+.rev {
+  position: relative;
+  @include mq(mobile-only) {
+    margin-bottom: 20px;
+  }
+}
 .link-tel {
   color: #111518;
   @include mq(mobile-only) {
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 20px;
     font-weight: 600;
     font-size: 14px;
     line-height: 1.22;
@@ -60,25 +66,23 @@
   }
   @include mq(tablet) {
     margin-right: 40px;
+    font-size: 30px;
   }
   @include mq(desktop) {
-    text-align: center;
+    font-size: 30px;
   }
 }
-.link-tel.mobile-current:after {
+.link-tel::after {
   @include mq(tablet) {
     position: absolute;
-    border: 1px solid rgba(33, 33, 33, 0.2);
+    border: 1px solid #b9b9b9;
     transform: rotate(90deg);
-    opacity: 100%;
-    color: red;
-    top: 11px;
+    background-color: #e5e5e5;
+    top: 20px;
+    left: 370px;
     content: '';
-    width: 22px;
+    width: 40px;
     height: 0px;
-    transition-property: opacity;
-    transition-duration: 250ms;
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
 }
 .tel__svg-icon {
@@ -87,12 +91,14 @@
   }
 }
 
+.div-insta {
+  padding-bottom: 40px;
+}
 .instagram-icon {
-  opacity: 50%;
+  border-radius: 20%;
   @include mq(mobile-only) {
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 40px;
   }
   @include mq(tablet-only) {
   }
