@@ -45,6 +45,10 @@
   position: absolute;
   width: 280px;
   height: 500px;
+  top: 203px;
+  left: 50%;
+  transform: translate(-50%);
+
   counter-reset: number;
 }
 
@@ -54,6 +58,7 @@
 
 .counter-card {
   margin-top: 0;
+  padding-top: 20px;
   position: relative;
   counter-increment: number 1;
   &::before {
@@ -61,6 +66,8 @@
     position: absolute;
     top: 0;
     left: 0;
+    padding-top: 20px;
+    padding-left: 32px;
     font-weight: 700;
     font-size: 20px;
     line-height: 1.22em;
@@ -69,9 +76,9 @@
   // .service-icon {
   //   //   position: relative;
   // }
-  &:not(:last-child) {
-    padding-bottom: 16px;
-  }
+  // &:not(:last-child) {
+  //   padding-bottom: 16px;
+  // }
   .problems-thumb {
     //   position: absolute;
     display: flex;
