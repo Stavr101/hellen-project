@@ -2,7 +2,7 @@
     padding-top: 40px;
     padding-bottom: 40px;
 
-    @include mq(desktop) {
+    @media screen and (mix-width: 1680px) {
         padding-top: 80px;
         padding-bottom: 80px;
     }
@@ -17,12 +17,12 @@
 
     color: #111518;
 
-    @include mq(tablet) {
+    @media screen and (min-width: 768px) {
         margin-bottom: 40px;
         font-size: 26px;
     }
 
-    @include mq(desktop) {
+    @media screen and (min-width: 1680px) {
         font-size: 46px;
     }
 }
@@ -31,7 +31,7 @@
     position: relative;
     margin-bottom: 40px;
 
-    @include mq(tablet) {
+    @media screen and (min-width: 768px) {
         margin: 0 auto;
         margin-bottom: 20px;
         display: flex;
@@ -44,7 +44,7 @@
         box-shadow: -5px 8px 26px rgba(0, 0, 0, 0.04);
     }
 
-    @include mq(desktop) {
+    @media screen and (min-width: 1680px) {
         width: 1088px;
         margin-bottom: 40px;
         padding-left: 80px;
@@ -53,7 +53,7 @@
 }
 
 .reviews__img-box {
-    @include mq(tablet) {
+    @media screen and (min-width: 768px) {
         margin-right: 42px;
     }
 
@@ -69,13 +69,13 @@
 
     color: #FF6B09;
 
-    @include mq(tablet) {
+    @media screen and (min-width: 768px) {
         margin-bottom: 20px;
         text-align: left;
         font-size: 20px;
     }
 
-    @include mq(desktop) {
+    @media screen and (min-width: 1680px) {
         margin-bottom: 8px;
         font-size: 14px;
     }
@@ -90,13 +90,13 @@
 
     color: #B9B9B9;
 
-    @include mq(tablet) {
+    @media screen and (min-width: 768px) {
         margin-bottom: 20px;
         font-size: 12px;
         text-align: left;
     }
 
-    @include mq(desktop) {
+    @media screen and (min-width: 1680px) {
         font-size: 14px;
     }
 }
@@ -107,7 +107,7 @@
     line-height: 1.67;
     color: #3D3D3D;
 
-    @include mq(desktop) {
+    @media screen and (min-width: 1680px) {
         font-size: 18px;
         text-align: left;
     }
@@ -129,8 +129,7 @@
     margin: 0 auto;
     margin-bottom: 20px;
 
-
-    @include mq(mobile-only) {
+    @media screen and (max-width: 767px) {
         margin-bottom: 24px;
     }
 
@@ -155,19 +154,19 @@
 }
 
 .reviews__member {
-    @include mq(mobile-only) {
+    @media screen and (max-width: 767px) {
         &+& {
             margin-left: 12px;
         }
     }
 
-    @include mq(tablet) {
+    @media screen and (min-width: 768px) {
         &+& {
             margin-left: 32px;
         }
     }
 
-    @include mq(desktop) {
+    @media screen and (min-width: 1680px) {
         &+& {
             margin-left: 40px;
         }
@@ -178,14 +177,14 @@
 .reviews__mobile {
 
 
-    @include mq(tablet) {
+    @media screen and (min-width: 768px) {
         display: none;
     }
 }
 
 .hide-on-mobile {
 
-    @include mq(mobile-only) {
+    @media screen and (max-width: 767px) {
         display: none;
     }
 
@@ -194,17 +193,17 @@
 .arrow-prev {
     position: absolute;
 
-    @include mq(mobile-only) {
+    @media screen and (max-width: 767px) {
         top: 20px;
         left: 0;
     }
 
-    @include mq(tablet) {
+    @media screen and (min-width: 768px) {
         top: 160px;
         left: 5px;
     }
 
-    @include mq(desktop) {
+    @media screen and (min-width: 1680px) {
         top: 160px;
         left: -40px;
     }
@@ -214,17 +213,17 @@
 .arrow-next {
     position: absolute;
 
-    @include mq(mobile-only) {
+    @media screen and (max-width: 767px) {
         top: 20px;
         right: 0;
     }
 
-    @include mq(tablet) {
+    @media screen and (min-width: 768px) {
         top: 160px;
         right: 5px;
     }
 
-    @include mq(desktop) {
+    @media screen and (min-width: 1680px) {
         top: 160px;
         right: -40px;
     }
@@ -238,7 +237,7 @@
 .reviews__mobile-only {
     position: relative;
 
-    @include mq(mobile-only) {
+    @media screen and (min-width: 767px) {
         display: none;
     }
 }
