@@ -1,7 +1,7 @@
 .about {
     background-color: #fff;
-    margin-top: 40px;
-    margin-bottom: 40px;
+    padding-top: 40px;
+    padding-bottom: 40px;
 }
 .about-title {
     font-weight: 800;
@@ -11,15 +11,14 @@
     color: var(--primary-title-color);
     margin-bottom: 20px;
 }
-.teacher-photo {
-    margin-bottom: 20px;
-}
+
 .name-title {
     position: relative;
     font-weight: 800;
     font-size: 20px;
     line-height: 1.2;
     color: var(--primary-title-color);
+    margin-bottom: 28px;
     &::after {
         display: block;
         position: absolute;
@@ -30,14 +29,17 @@
     }
 }
 .about-advantages-list {
-    margin-top: 20px;
+    position: relative;
     margin-left: 28px;
-    
+    margin-bottom: 60px;
 }
 .about-advantages-item {
     position: relative;
     display: flex;
     max-width: 417px;
+    &:not(:last-child) {
+        margin-bottom: 20px;
+    }
 }
 .about-advantages-text {
     font-weight: 600;
@@ -47,12 +49,122 @@
     color: var(--primary-title-color);
 
     &::before {
-        content: url(./../images/about-icon.svg);
+        background-image: url(./../images/about-icon.svg);
+        background-repeat: no-repeat;
+        background-size: contain;
+        content:'';
         position: absolute;
         left: -28px;
         top: 2px;
-        // background-size: 17px 14px;
-        // width: 17px;
-        // height: 14px;
+        width: 17px;
+        height: 14px;
+    }
+}
+.about-education {
+    position: relative;
+    font-size: 12px;
+    line-height: 1.66;
+    margin-bottom: 8px;
+    
+    &::before {
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 1.65;
+        position: absolute;
+        content: '—';
+        color: #FF6B09;
+        top: -48px;
+        left: 0;
+    }
+}
+.certificate-link {
+    font-size: 12px;
+    line-height: 1.66;
+    text-decoration-line: underline;
+    color: #FF6B09;
+}
+
+@include mq(mobile-only) {
+    .teacher-photo {
+        display: flex;
+        margin-bottom: 20px;
+    }
+}
+
+@include mq(tablet) {
+    .about-title {
+        font-size: 26px;
+        margin-bottom: 40px;
+    }
+    .about-description {
+        display: flex;
+        justify-content: space-between;
+    }
+    .teacher-info {
+        width: 401px;
+    }
+    .about-advantages-text {
+        font-size: 12px;
+        line-height: 1.25;
+    }
+    .about-education {
+        font-size: 10px;
+        line-height: 2;
+    }
+}
+
+@include mq(desktop) {
+    .about {
+        padding-right: 280px;
+        padding-top: 80px;
+        padding-bottom: 80px;
+    }
+    .about-container.container {
+        width: 1368px;
+        padding: 0;
+    }
+    .teacher-info {
+        width: 668px;
+    }
+    .about-title {
+        font-size: 46px;
+        margin-bottom: 80px;
+    }
+    .name-title {
+        font-size: 30px;
+        line-height: 1.23;
+        margin-bottom: 48px;
+        &::after {
+            bottom: -16px;
+        }
+    }
+    .about-advantages-list {
+        margin-left: 50px;
+    }
+    .about-advantages-item {
+        &:not(:last-child) {
+            margin-bottom: 26px;
+        }
+    }
+    .about-advantages-text {
+        font-size: 16px;
+        &::before {
+            left: -50px;
+            width: 24px;
+            height: 20px;
+        }  
+    }
+    .about-education {
+        font-size: 18px;
+        line-height: 1.55;
+        margin-bottom: 20px;
+    }
+    .about-aducation-text:not(:last-child) {
+        margin-bottom: 20px;
+        
+    }
+    .certificate-link {
+        font-size: 18px;
+        line-height: 1.55;
     }
 }
