@@ -1,0 +1,137 @@
+.footer__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 40px;
+  padding-top: 40px;
+  @include mq(mobile) {
+    width: 480px;
+  }
+  @include mq(tablet-only) {
+    width: 768px;
+    flex-direction: row;
+  }
+  @include mq(desktop) {
+    width: 1680px;
+    flex-direction: row;
+  }
+}
+
+.footer__logo {
+  @include mq(mobile-only) {
+    margin-top: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+  }
+  @include mq(tablet) {
+  }
+  @include mq(desktop) {
+  }
+}
+.footer-contacts {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  @include mq(tablet) {
+    flex-direction: row;
+    align-items: center;
+    width: 448px;
+  }
+  @include mq(desktop) {
+    align-items: center;
+    margin-right: 596px;
+  }
+}
+.rev {
+  position: relative;
+  @include mq(mobile-only) {
+    margin-bottom: 20px;
+  }
+}
+.link-tel {
+  color: #111518;
+  @include mq(mobile-only) {
+    margin-left: auto;
+    margin-right: auto;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 1.22;
+    letter-spacing: 0.08em;
+  }
+  @include mq(tablet) {
+    margin-right: 40px;
+    font-size: 30px;
+  }
+  @include mq(desktop) {
+    font-size: 30px;
+  }
+}
+.link-tel::after {
+  @include mq(tablet) {
+    position: absolute;
+    border: 1px solid #b9b9b9;
+    transform: rotate(90deg);
+    background-color: #e5e5e5;
+    top: 20px;
+    left: 370px;
+    content: '';
+    width: 40px;
+    height: 0px;
+  }
+}
+.tel__svg-icon {
+  @include mq(tablet) {
+    margin-right: 8px;
+  }
+}
+
+.div-insta {
+  padding-bottom: 40px;
+}
+.instagram-icon {
+  border-radius: 20%;
+  @include mq(mobile-only) {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  @include mq(tablet-only) {
+  }
+  @include mq(desktop) {
+  }
+}
+
+.backgraund {
+  display: flex;
+  width: 100%;
+  height: 80px;
+  align-items: center;
+  text-align: center;
+  background-color: #111518;
+  @include mq(mobile-only) {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  @include mq(tablet-only) {
+  }
+  @include mq(desktop) {
+  }
+}
+.copyright {
+  color: #b9b9b9;
+  margin-left: auto;
+  margin-right: auto;
+  @include mq(mobile-only) {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 2;
+    letter-spacing: 0.08em;
+  }
+  @include mq(tablet) {
+    font-weight: 500;
+  }
+  @include mq(desktop) {
+  }
+}

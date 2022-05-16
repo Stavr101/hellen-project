@@ -1,0 +1,102 @@
+.guarantee {
+    padding-top: 40px;
+}
+
+.guarantee-title {
+    font-weight: 800;
+    font-size: 26px;
+    line-height: calc(34 / 26);
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: #111518;
+
+    @media screen and (min-width: 1680px) {
+        font-size: 46px;
+    }
+
+}
+
+.guarantee__background {
+    background-color: #F1F1F1;
+    @media screen and (min-width: 768px) and (max-width: 1679px) {
+        margin: 40px 32px;
+    }
+
+    @media screen and (min-width: 1680px) {
+        margin: 40px 16px;
+    }
+
+}
+
+.guarantee__list {
+    display: flex;
+    flex-direction: column;
+    padding: 40px 20px;
+
+    @media screen and (min-width: 768px) and (max-width: 1679px) {
+        padding: 32px 58px 32px 87px;
+    }
+
+    @media screen and (min-width: 1680px) {
+        padding: 60px 278px;
+    }
+}
+
+.guarantee__text {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: calc(20 / 12);
+    color: #3D3D3D;
+
+    &--important {
+        color: var(--accent-color);
+    }
+
+    @media screen and (min-width: 1680px) {
+        font-size: 20px;
+    }
+
+
+
+    .guarantee__item:first-child &::after {
+        content: '*';
+        color: var(--accent-color);
+    }
+}
+
+.guarantee__item {
+    display: inline-flex;
+    border-left: 1px dashed #B9B9B9;
+
+    &:last-child {
+        border: 0;
+    }
+}
+
+.guarantee__item::before {
+    display: inline-block;
+    background-image: url('./../images/icon-campfire.svg');
+    background-size: auto;
+    background-repeat: no-repeat;
+
+    content: "";
+    width: 15px;
+    height: 20px;
+    padding-right: 34px;
+    margin-left: -7px;
+
+    @media screen and (min-width: 1680px) {
+        width: 22px;
+        height: 30px;
+        padding-right: 52px;
+        margin-left: -11px;
+    }
+}
+
+.guarantee__item:not(:last-child) {
+    padding-bottom: 24px;
+
+    @media screen and (min-width: 767px) {
+        padding-bottom: 20px;
+    }
+}
