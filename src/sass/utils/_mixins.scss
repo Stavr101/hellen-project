@@ -26,6 +26,7 @@
             @content;
         }
     }
+<<<<<<< HEAD
 
     @else if $range ==no-desktop {
         @media (max-width: #{$desktop - 0.02}) {
@@ -37,6 +38,15 @@
         @media (min-width: $desktop) {
             @content;
         }
+=======
+  } @else if $range == no-desktop {
+    @media (max-width: #{$desktop - 0.02}) {
+      @content;
+    }
+  } @else if $range == desktop {
+    @media (min-width: $desktop) {
+      @content;
+>>>>>>> eac1fde193c042c3e778d44a994a3fc9520f1dea
     }
 
     @else if $range ==retina {

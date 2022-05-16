@@ -1,0 +1,97 @@
+// .service {
+//   @media screen and (max-width: 1199px) {
+//     display: none;
+//   }
+// }
+.problems .container {
+  position: relative;
+  padding-left: 0;
+  padding-right: 0;
+
+  max-width: 480px;
+  width: 100%;
+  height: 704px;
+  // height: 702px;
+  background-image: linear-gradient(black 80%, white 20%);
+}
+
+.problems-title {
+  // position: relative;
+  // margin-right: auto;
+  // margin-left: auto;
+  max-width: 280px;
+}
+
+.section-title {
+  display: block;
+  padding-top: 24px;
+  padding-left: 20px;
+  padding-right: 20px;
+  text-align: start;
+  margin-bottom: 80px;
+  font-size: 20px;
+  line-height: 1.3;
+  letter-spacing: 0.03em;
+  font-weight: 800;
+
+  color: var(--secondary-accent-title-color);
+}
+
+.title-accent {
+  color: var(--accent-color);
+}
+// }
+.problems-causes {
+  position: absolute;
+  width: 280px;
+  height: 500px;
+  counter-reset: number;
+}
+
+.counter-list {
+  counter-reset: number 00;
+}
+
+.counter-card {
+  margin-top: 0;
+  position: relative;
+  counter-increment: number 1;
+  &::before {
+    content: '\2014 \0020 0'counter(number);
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.22em;
+    color: var(--accent-color);
+  }
+  // .service-icon {
+  //   //   position: relative;
+  // }
+  &:not(:last-child) {
+    padding-bottom: 16px;
+  }
+  .problems-thumb {
+    //   position: absolute;
+    display: flex;
+    bottom: 0;
+    width: 100%;
+    height: 70px;
+    // justify-content: center;
+    align-items: center;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.17;
+  }
+
+  color: #111518;
+  background-color: #ffffff;
+}
+
+.problems-list {
+  --card-item: 1;
+}
+// @include mq(desktop) {
+//   --card-item: 2;
+// }

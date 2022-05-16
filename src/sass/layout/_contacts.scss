@@ -1,19 +1,88 @@
 // SECTION contacts
 
 .contacts {
-    background-color: gray;
+
     margin: 0;
     padding-top: 40px;
     padding-bottom: 40px;
+    background-color: rgba(17, 21, 24, 0.7);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: linear-gradient(to right, rgba(17, 21, 24, 0.8), rgba(17, 21, 24, 0.8)), url(../images/contacts/contacts-mobile-1x.jpg);
 
-    @media screen and (min-width: 1200px) {
+    @media screen and (min-width: 768px) {
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-image: linear-gradient(to right, rgba(17, 21, 24, 0.8), rgba(17, 21, 24, 0.8)), url(../images/contacts/contacts-tablet-1x.jpg);
+    }
+
+    @media screen and (min-width: 1680px) {
         padding-top: 80px;
         padding-bottom: 80px;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-image: linear-gradient(to right, rgba(17, 21, 24, 0.8), rgba(17, 21, 24, 0.8)), url(../images/contacts/contacts-desktop-1x.jpg);
+
+    }
+}
+
+.contacts__container {
+    @media screen and (min-width: 1680px) {
+        width: 1680px;
+    }
+}
+
+@media (min-device-pixel-ratio: 2),
+(-webkit-min-device-pixel-ratio: 2),
+(min-resolution: 192dpi),
+(min-resolution: 2dppx) {
+    .contacts {
+        @media screen and (max-width: 767px) {
+            background-color: rgba(17, 21, 24, 0.8);
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            text-align: center;
+            background-image: linear-gradient(to right,
+                    rgba(17, 21, 24, 0.8),
+                    rgba(17, 21, 24, 0.8)),
+                url(./../images/contacts/contacts-mobile-2x.jpg);
+        }
+
+
+
+        @media screen and (min-width: 768px) {
+            background-color: rgba(17, 21, 24, 0.8);
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            text-align: center;
+            background-image: linear-gradient(to right,
+                    rgba(17, 21, 24, 0.8),
+                    rgba(17, 21, 24, 0.8)),
+                url(./../images/contacts/contacts-tablet-2x.jpg);
+        }
+
+
+        @media screen and (min-width: 1680px) {
+            background-color: rgba(17, 21, 24, 0.8);
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            text-align: center;
+            background-image: linear-gradient(to right,
+                    rgba(17, 21, 24, 0.8),
+                    rgba(17, 21, 24, 0.8)),
+                url(./../images/contacts/contacts-desktop-2x.jpg);
+        }
     }
 }
 
 .contacts__title {
-    // margin: 0;
+    margin: 0 auto;
     margin-bottom: 24px;
     font-weight: 800;
     font-size: 14px;
@@ -27,16 +96,20 @@
         margin-bottom: 40px;
         font-size: 26px;
         line-height: 1.3;
+        width: 688px;
+
     }
 
-    @media screen and (min-width: 1200px) {
+    @media screen and (min-width: 1680px) {
         font-size: 46px;
         line-height: 1.28;
+
+        width: 1090px;
     }
 }
 
 .contacts__accent {
-    color: #FF6B09;
+    color: var(--accent-color);
 }
 
 .contacts__text {
@@ -53,12 +126,15 @@
         margin-bottom: 24px;
         font-size: 14px;
         line-height: 1.21;
+        width: 688px;
     }
 
-    @media screen and (min-width: 1200px) {
+    @media screen and (min-width: 1680px) {
         font-size: 30px;
         line-height: 1.2;
         margin-bottom: 60px;
+
+        width: 1090px;
     }
 }
 
@@ -68,7 +144,7 @@
     margin-bottom: 20px;
     padding-right: 28px;
     padding-left: 28px;
-    max-width: 280px;
+    width: 280px;
     height: 48px;
     outline: none;
     border: 1px solid #ffffff;
@@ -84,7 +160,17 @@
     &:last-of-type {
         margin-bottom: 40px;
     }
+
+    @media screen and (min-width: 768px) {
+        width: 336px;
+    }
+
+    @media screen and (min-width: 1680px) {
+        width: 528px;
+    }
 }
+
+//Удалить класс contacts__container
 
 .contacts__btn {
     display: block;
@@ -99,4 +185,6 @@
     text-align: center;
     letter-spacing: 0.08em;
     color: #ffffff;
+    background-color: var(--accent-color);
+    border: none;
 }
