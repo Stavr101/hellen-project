@@ -151,7 +151,6 @@
   flex-direction: column;
   margin-left: auto;
   margin-right: auto;
-  padding: 20px;
   @include mq(mobile) {
     width: 480px;
   }
