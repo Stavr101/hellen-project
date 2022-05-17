@@ -4,11 +4,15 @@
   justify-content: space-between;
   margin-left: auto;
   margin-right: auto;
-  padding-top: 40px;
-  padding-bottom: 27px;
   @include mq(mobile) {
     width: 480px;
   }
+  @include mq(tablet) {
+    width: 480px;
+    padding-top: 40px;
+    padding-bottom: 27px;
+  }
+
   @include mq(tablet-only) {
     width: 768px;
     flex-direction: row;
@@ -21,14 +25,13 @@
 
 .footer__logo {
   @include mq(mobile-only) {
-    margin-top: 40px;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 20px;
-  }
-  @include mq(tablet) {
+    margin-top: 40px;
   }
   @include mq(desktop) {
+    margin-top: 40px;
   }
 }
 .footer-contacts {
@@ -47,6 +50,9 @@
   position: relative;
   @include mq(mobile-only) {
     margin-bottom: 20px;
+  }
+  @include mq(tablet-only) {
+    margin-bottom: 53px;
   }
 }
 .link-tel {
@@ -78,6 +84,10 @@
     content: '';
     width: 40px;
     height: 0px;
+    @include mq(tablet-only) {
+      top: 15px;
+      left: 270px;
+    }
   }
 }
 .tel__svg-icon {
