@@ -29,12 +29,6 @@
     }
 }
 
-.contacts__container {
-    @media screen and (min-width: 1680px) {
-        width: 1680px;
-    }
-}
-
 @media (min-device-pixel-ratio: 2),
 (-webkit-min-device-pixel-ratio: 2),
 (min-resolution: 192dpi),
@@ -132,8 +126,8 @@
     @media screen and (min-width: 1680px) {
         font-size: 30px;
         line-height: 1.2;
+        margin: 0 auto;
         margin-bottom: 60px;
-
         width: 1090px;
     }
 }
@@ -187,4 +181,19 @@
     color: #ffffff;
     background-color: var(--accent-color);
     border: none;
+    transition: background-color var(--transition);
+
+    &:hover,
+    &:focus {
+        background-color: #d36d0e;
+    }
+
+    @include mq(tablet) {
+        width: 335px;
+    }
+
+    @include mq(desktop) {
+        width: 528px;
+        font-size: 14px;
+    }
 }
