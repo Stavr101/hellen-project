@@ -163,11 +163,11 @@
 }
 
 .reviews__wrap {
-    @media mq(tablet) {
+   @include mq(tablet) {
         width: 400px;
     }
 
-    @media mq(desktop) {
+   @include mq(desktop) {
         width: 700px;
     }
 }
