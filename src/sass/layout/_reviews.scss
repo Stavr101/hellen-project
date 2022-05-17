@@ -52,9 +52,11 @@
     }
 }
 
+// Commet to delete
 .reviews__img-box {
     @media screen and (min-width: 768px) {
         margin-right: 42px;
+
     }
 
 }
@@ -120,9 +122,6 @@
 
 }
 
-// CHANGE COLOR TO ACCENT COLOR
-// CHANGE SECTION-TITLE CLASS, use mixins
-
 .reviews__main-img {
 
     display: block;
@@ -151,6 +150,16 @@
     align-items: center;
     margin-bottom: 20px;
 
+}
+
+.reviews__wrap {
+    @media mq(tablet) {
+        width: 400px;
+    }
+
+    @media mq(desktop) {
+        width: 700px;
+    }
 }
 
 .reviews__member {
