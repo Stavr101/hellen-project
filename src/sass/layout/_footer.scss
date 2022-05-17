@@ -4,8 +4,8 @@
   justify-content: space-between;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 40px;
   padding-top: 40px;
+  padding-bottom: 27px;
   @include mq(mobile) {
     width: 480px;
   }
@@ -37,11 +37,9 @@
   flex-direction: column;
   @include mq(tablet) {
     flex-direction: row;
-    align-items: center;
     width: 448px;
   }
   @include mq(desktop) {
-    align-items: center;
     margin-right: 596px;
   }
 }
@@ -63,7 +61,7 @@
   }
   @include mq(tablet) {
     margin-right: 40px;
-    font-size: 30px;
+    font-size: 20px;
   }
   @include mq(desktop) {
     font-size: 30px;
@@ -89,10 +87,19 @@
 }
 
 .div-insta {
-  padding-bottom: 40px;
-}
-.instagram-icon {
+  margin-bottom: 53px;
   border-radius: 20%;
+  background: radial-gradient(
+    110.28% 110.28% at 20.5% 87.39%,
+    #fae100 0%,
+    #fadc04 5.44%,
+    #fbce0e 11.67%,
+    #fcb720 18.29%,
+    #fe9838 25.14%,
+    #ff7950 30.54%,
+    #ff1c74 49.22%,
+    #6c1cd1 100%
+  );
   @include mq(mobile-only) {
     margin-left: auto;
     margin-right: auto;
