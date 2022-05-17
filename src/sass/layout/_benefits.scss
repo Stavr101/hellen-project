@@ -1,0 +1,163 @@
+.problems .container {
+  position: relative;
+  padding-left: 0;
+  padding-right: 0;
+  margin-bottom: 40px;
+  // max-width: 480px;
+  width: 100%;
+  min-height: 704px;
+  background: grey;
+  background-image: linear-gradient(black 80%, white 20%);
+
+  @include mq(tablet) {
+    min-height: 469px;
+  }
+
+  @include mq(desktop) {
+    width: 1680px;
+    min-height: 692px;
+  }
+}
+
+.problems-title {
+  width: 280px;
+
+  @include mq(tablet) {
+    min-width: 568px;
+  }
+  @include mq(desktop) {
+    min-width: 866px;
+  }
+}
+
+.flame {
+  position: relative;
+}
+
+.section-title {
+  display: block;
+  padding-top: 24px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-bottom: 80px;
+  text-align: start;
+
+  // font-weight: 800;
+  font-size: 20px;
+  line-height: 1.3;
+  letter-spacing: 0.03em;
+
+  color: var(--secondary-accent-title-color);
+
+  @include mq(tablet) {
+    padding-top: 40px;
+    font-size: 26px;
+  }
+  @include mq(desktop) {
+    font-size: 46px;
+  }
+
+  .title-accent {
+    color: var(--accent-color);
+  }
+}
+
+.problems-causes {
+  position: absolute;
+  min-width: 280px;
+  min-height: 500px;
+  top: 203px;
+  left: 50%;
+  transform: translate(-50%);
+  background: #ffffff;
+  box-shadow: -5px 8px 26px rgba(0, 0, 0, 0.04);
+  counter-reset: number;
+
+  @include mq(tablet) {
+    min-width: 704px;
+    min-height: 300px;
+    top: 169px;
+  }
+
+  @include mq(desktop) {
+    width: 1648px;
+    min-height: 354px;
+    top: 338px;
+    padding-left: 140px;
+  }
+
+  .card-set {
+    // display: flex;
+    // flex-wrap: wrap;
+    // margin-left: -30px;
+    margin-top: 0;
+    padding-top: 20px;
+
+    @include mq(tablet) {
+      padding-top: 32px;
+    }
+  }
+}
+
+.card-item {
+  margin-top: 0;
+}
+
+.counter-card {
+  margin-top: 0;
+  margin-bottom: 16px;
+  position: relative;
+  counter-increment: number 1;
+
+  @include mq(tablet) {
+    --card-item: 2;
+  }
+  @include mq(desktop) {
+    --card-item: 3;
+  }
+}
+@include mq(tablet-only) {
+  .counter-card:nth-child(odd) {
+    padding-left: 80px;
+  }
+}
+.problems-thumb {
+  position: relative;
+  display: flex;
+  bottom: 0;
+  width: 100%;
+  min-height: 70px;
+  padding-left: 32px;
+
+  align-items: end;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.17;
+  color: var(--primary-title-color);
+
+  @include mq(desktop) {
+    font-size: 20px;
+    width: 336px;
+    min-height: 97px;
+  }
+  &::before {
+    content: '— 0' counter(number);
+    position: absolute;
+    top: 5px;
+
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.22em;
+    color: var(--accent-color);
+
+    @include mq(mobile-only) {
+      left: 0;
+      padding-left: 32px;
+    }
+
+    @include mq(tablet) {
+      padding-top: 0;
+      padding-left: 0;
+    }
+  }
+}
