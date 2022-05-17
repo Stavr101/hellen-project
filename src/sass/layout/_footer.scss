@@ -40,17 +40,18 @@
     width: 356px;
   }
   @include mq(desktop) {
-    width: 448px;
+    width: 488px;
     margin-right: 596px;
   }
 }
 .rev {
   position: relative;
-  @include mq(desktop) {
-    padding-top: 43px;
-  }
+  display: flex;
+  align-items: center;
 }
 .link-tel {
+  display: flex;
+  align-items: center;
   color: #111518;
   align-items: center;
   @include mq(mobile-only) {
@@ -75,7 +76,7 @@
     border: 1px solid #b9b9b9;
     transform: rotate(90deg);
     background-color: #e5e5e5;
-    top: 63px;
+    top: 20Gpx;
     left: 370px;
     content: '';
     width: 40px;
