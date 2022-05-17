@@ -120,14 +120,12 @@
 
 }
 
-// CHANGE COLOR TO ACCENT COLOR
-// CHANGE SECTION-TITLE CLASS, use mixins
-
 .reviews__main-img {
 
     display: block;
     margin: 0 auto;
     margin-bottom: 20px;
+    width: 150px;
 
     @media screen and (max-width: 767px) {
         margin-bottom: 24px;
