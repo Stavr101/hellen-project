@@ -2,17 +2,15 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  align-items: center;
+  align-content: center;
   margin-left: auto;
   margin-right: auto;
+  padding-top: 40px;
+  padding-bottom: 40px;
   @include mq(mobile) {
     width: 480px;
   }
-  @include mq(tablet) {
-    width: 480px;
-    padding-top: 40px;
-    padding-bottom: 27px;
-  }
-
   @include mq(tablet-only) {
     width: 768px;
     flex-direction: row;
@@ -24,14 +22,13 @@
 }
 
 .footer__logo {
+  @include mq(mobile) {
+    margin-right: auto;
+  }
   @include mq(mobile-only) {
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 20px;
-    margin-top: 40px;
-  }
-  @include mq(desktop) {
-    margin-top: 40px;
   }
 }
 .footer-contacts {
@@ -40,24 +37,22 @@
   flex-direction: column;
   @include mq(tablet) {
     flex-direction: row;
-    width: 448px;
+    width: 356px;
   }
   @include mq(desktop) {
+    width: 448px;
     margin-right: 596px;
-    margin-top: 40px;
   }
 }
 .rev {
   position: relative;
-  @include mq(mobile-only) {
-    margin-bottom: 20px;
-  }
-  @include mq(tablet-only) {
-    margin-bottom: 53px;
+  @include mq(desktop) {
+    padding-top: 43px;
   }
 }
 .link-tel {
   color: #111518;
+  align-items: center;
   @include mq(mobile-only) {
     margin-left: auto;
     margin-right: auto;
@@ -80,7 +75,7 @@
     border: 1px solid #b9b9b9;
     transform: rotate(90deg);
     background-color: #e5e5e5;
-    top: 20px;
+    top: 63px;
     left: 370px;
     content: '';
     width: 40px;
@@ -94,11 +89,16 @@
 .tel__svg-icon {
   @include mq(tablet) {
     margin-right: 8px;
+    width: 24px;
+    height: 23px;
+  }
+  @include mq(desktop) {
+    width: 30px;
+    height: 29px;
   }
 }
 
 .div-insta {
-  margin-bottom: 53px;
   border-radius: 20%;
   background: radial-gradient(
     110.28% 110.28% at 20.5% 87.39%,
@@ -114,10 +114,7 @@
   @include mq(mobile-only) {
     margin-left: auto;
     margin-right: auto;
-  }
-  @include mq(tablet-only) {
-  }
-  @include mq(desktop) {
+    margin-top: 20px;
   }
 }
 
@@ -131,10 +128,6 @@
   @include mq(mobile-only) {
     margin-left: auto;
     margin-right: auto;
-  }
-  @include mq(tablet-only) {
-  }
-  @include mq(desktop) {
   }
 }
 .copyright {
