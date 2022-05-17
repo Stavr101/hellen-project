@@ -61,6 +61,16 @@
 
 }
 
+.reviews__wrap {
+    @include mq(tablet) {
+        width: 400px;
+    }
+
+    @include mq(desktop) {
+        width: 700px;
+    }
+}
+
 .reviews__subtitle {
     margin-bottom: 16px;
     font-weight: 800;
