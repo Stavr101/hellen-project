@@ -4,11 +4,15 @@
   justify-content: space-between;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 40px;
-  padding-top: 40px;
   @include mq(mobile) {
     width: 480px;
   }
+  @include mq(tablet) {
+    width: 480px;
+    padding-top: 40px;
+    padding-bottom: 27px;
+  }
+
   @include mq(tablet-only) {
     width: 768px;
     flex-direction: row;
@@ -21,14 +25,13 @@
 
 .footer__logo {
   @include mq(mobile-only) {
-    margin-top: 40px;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 20px;
-  }
-  @include mq(tablet) {
+    margin-top: 40px;
   }
   @include mq(desktop) {
+    margin-top: 40px;
   }
 }
 .footer-contacts {
@@ -37,18 +40,20 @@
   flex-direction: column;
   @include mq(tablet) {
     flex-direction: row;
-    align-items: center;
     width: 448px;
   }
   @include mq(desktop) {
-    align-items: center;
     margin-right: 596px;
+    margin-top: 40px;
   }
 }
 .rev {
   position: relative;
   @include mq(mobile-only) {
     margin-bottom: 20px;
+  }
+  @include mq(tablet-only) {
+    margin-bottom: 53px;
   }
 }
 .link-tel {
@@ -63,7 +68,7 @@
   }
   @include mq(tablet) {
     margin-right: 40px;
-    font-size: 30px;
+    font-size: 20px;
   }
   @include mq(desktop) {
     font-size: 30px;
@@ -80,6 +85,10 @@
     content: '';
     width: 40px;
     height: 0px;
+    @include mq(tablet-only) {
+      top: 15px;
+      left: 270px;
+    }
   }
 }
 .tel__svg-icon {
@@ -89,10 +98,19 @@
 }
 
 .div-insta {
-  padding-bottom: 40px;
-}
-.instagram-icon {
+  margin-bottom: 53px;
   border-radius: 20%;
+  background: radial-gradient(
+    110.28% 110.28% at 20.5% 87.39%,
+    #fae100 0%,
+    #fadc04 5.44%,
+    #fbce0e 11.67%,
+    #fcb720 18.29%,
+    #fe9838 25.14%,
+    #ff7950 30.54%,
+    #ff1c74 49.22%,
+    #6c1cd1 100%
+  );
   @include mq(mobile-only) {
     margin-left: auto;
     margin-right: auto;
