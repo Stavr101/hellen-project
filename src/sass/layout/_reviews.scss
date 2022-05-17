@@ -151,6 +151,16 @@
 
 }
 
+.reviews__wrap {
+    @media mq(tablet) {
+        width: 400px;
+    }
+
+    @media mq(desktop) {
+        width: 700px;
+    }
+}
+
 .reviews__member {
     @media screen and (max-width: 767px) {
         &+& {
