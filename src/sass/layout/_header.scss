@@ -122,7 +122,7 @@
 }
 
 .mobile-menu {
-  position: absolute;
+  position: fixed;
   z-index: 1000;
   opacity: 0;
   visibility: hidden;
