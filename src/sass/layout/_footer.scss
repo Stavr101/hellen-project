@@ -18,6 +18,8 @@
   @include mq(desktop) {
     width: 1680px;
     flex-direction: row;
+    padding-top: 80px;
+    padding-bottom: 80px;
   }
 }
 
@@ -41,7 +43,7 @@
   }
   @include mq(desktop) {
     width: 488px;
-    margin-right: 596px;
+    margin-right: 576px;
   }
 }
 .rev {
@@ -52,8 +54,8 @@
 .link-tel {
   display: flex;
   align-items: center;
+  text-align: center;
   color: #111518;
-  align-items: center;
   @include mq(mobile-only) {
     margin-left: auto;
     margin-right: auto;
@@ -76,8 +78,8 @@
     border: 1px solid #b9b9b9;
     transform: rotate(90deg);
     background-color: #e5e5e5;
-    top: 20Gpx;
-    left: 370px;
+    top: 20px;
+    left: 375px;
     content: '';
     width: 40px;
     height: 0px;
@@ -88,14 +90,15 @@
   }
 }
 .tel__svg-icon {
+  margin-right: 8px;
   @include mq(tablet) {
-    margin-right: 8px;
     width: 24px;
     height: 23px;
   }
   @include mq(desktop) {
     width: 30px;
     height: 29px;
+    margin-right: 12px;
   }
 }
 
